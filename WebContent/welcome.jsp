@@ -192,6 +192,7 @@ body {
   <a class="active" href="#home">Home</a>
   <a href="courier.jsp">Send Courier</a>
   <a href="offers.jsp">Offers</a>
+   <a href="policy.jsp">Policy</a>
   <div class="login-container">
   <%   
   
@@ -203,11 +204,7 @@ String nam=(String)session.getAttribute("user");
 if(nam.equals(""))
 
 {%>
-    <form action="welcome.jsp">
-      <input type="text" placeholder="Username" name="username">
-      <input type="text" placeholder="Password" name="psw">
-      <button type="submit">Login</button>
-    </form>
+    
   </div>
   
   <%
@@ -229,8 +226,5 @@ else{
   <%
   }%>
 </div>
-
-
-
 </body>
 </html>

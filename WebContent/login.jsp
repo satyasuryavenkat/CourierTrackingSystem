@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin</title>
+<title>User Login</title>
 
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -18,7 +18,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-  background-color: #555;
+  background-color: #4CAF50;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -77,34 +77,25 @@ span.psw {
 <body>
 
 
-<form action="<%= request.getContextPath() %>/userreg" method="post">
-  <h1 align="center">User Registration Form</h1>
+<form action="<%= request.getContextPath() %>/userlogin" method="post">
+  <h1 align="center">User Login</h1>
 
   <div class="container" style="padding-left:500px;">
-  
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Your Name" name="username" required>
+    <label for="uname"><b>UserName</b></label>
+    <input type="text" placeholder="Enter AdminName" name="username" required>
 
-	<label for="mail"><b>Email</b></label>
-    <input type="text" placeholder="Enter Your mailid" name="mail" required>
-    
-    <label for="addr"><b>Address</b></label>
-    <input type="text" placeholder="Enter Your Address" name="addr" required>
-
-	<label for="mobile"><b>Mobile Number</b></label>
-    <input type="text" placeholder="Enter Your MobileNumber" name="mobile" required>
-    
-    
-    <label for="paswd"><b>Password</b></label>
+    <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="passwd" required>
         
-    <button type="submit">Register</button>
+    <button type="submit">Login</button>
     
   </div>
 
   <div class="container" style="padding-left:500px;">
-    
-    <span class="psw">Already have account ? <a href="index.html">Login here</a></span>
+  <a href="register.jsp">
+    <button type="button" class="cancelbtn">Register</button>
+    </a>
+    <span class="psw">Forgot <a href="#">password?</a></span>
   </div>
 </form>
 

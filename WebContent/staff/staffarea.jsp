@@ -38,7 +38,7 @@
 </head>
 <header>
 
-<h1 align="center">Admin Area
+<h1 align="center">Staff Area
 
 
 <button class="button" type="submit">Logout</button>
@@ -52,18 +52,13 @@
 
 
 
-<div class="card">
-  <a href="users.jsp"><img src="users.png" alt="Avatar" style="width:100%;"></a>
-  <div class="container">
-    <h4><b>User Details</b></h4>  
-  </div>
-</div>
+
 
 
 <div class="card">
   <a href="staff.jsp"><img src="managers.jpg" alt="Avatar" style="width:100%; height:270px;"></a>
   <div class="container">
-    <h4><b>Staff Details</b></h4>  
+    <h4><b>Your Details</b></h4>  
   </div>
 </div>
 
@@ -73,32 +68,6 @@
     <h4><b>Warehouse Details</b></h4>  
   </div>
 </div>
-
-
-
-<div class="card">
-  <a href="#"><img src="couriers.jpg" alt="Avatar" style="width:100%; height:270px;"></a>
-  <div class="container">
-    <h4><b>Check Courier Details</b></h4>  
-  </div>
-</div>
-
-<div class="card">
-  <a href="#"><img src="tracking.jpg" alt="Avatar" style="width:100%; height:270px;"></a>
-  <div class="container">
-    <h4><b>Track Courier Here</b></h4>  
-  </div>
-</div>
-
-
-<div class="card">
-  <a href="#"><img src="bills.jpg" alt="Avatar" style="width:100%; height:270px;"></a>
-  <div class="container">
-    <h4><b>Check Courier Payments</b></h4>  
-  </div>
-</div>
-
-
 
 </body>
 </html>

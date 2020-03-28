@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin</title>
+<title>Courier Tracking System</title>
 
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -77,35 +77,26 @@ span.psw {
 <body>
 
 
-<form action="<%= request.getContextPath() %>/userreg" method="post">
-  <h1 align="center">User Registration Form</h1>
+<form action="<%= request.getContextPath() %>/addware" method="post">
+  <h1 align="center">Branch Registration Form</h1>
 
   <div class="container" style="padding-left:500px;">
   
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Your Name" name="username" required>
+    <label for="uname"><b>Branchname</b></label>
+    <input type="text" placeholder="Enter Branch Name" name="branchname" required>
+    
+    <label for="addr"><b> Branch Location</b></label>
+    <input type="text" placeholder="Enter Branch Location" name="addr" required>
 
-	<label for="mail"><b>Email</b></label>
-    <input type="text" placeholder="Enter Your mailid" name="mail" required>
-    
-    <label for="addr"><b>Address</b></label>
-    <input type="text" placeholder="Enter Your Address" name="addr" required>
+	<label for="mobile"><b>Branch Mobile Number</b></label>
+    <input type="text" placeholder="Enter Branch MobileNumber" name="mobile" required>
 
-	<label for="mobile"><b>Mobile Number</b></label>
-    <input type="text" placeholder="Enter Your MobileNumber" name="mobile" required>
-    
-    
-    <label for="paswd"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="passwd" required>
         
     <button type="submit">Register</button>
     
   </div>
 
-  <div class="container" style="padding-left:500px;">
-    
-    <span class="psw">Already have account ? <a href="index.html">Login here</a></span>
-  </div>
+  
 </form>
 
 </body>

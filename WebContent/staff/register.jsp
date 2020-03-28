@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Admin</title>
+<title>Staff</title>
 
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -77,13 +77,13 @@ span.psw {
 <body>
 
 
-<form action="<%= request.getContextPath() %>/userreg" method="post">
-  <h1 align="center">User Registration Form</h1>
+<form action="<%= request.getContextPath() %>/staffreg" method="post">
+  <h1 align="center">Staff Registration Form</h1>
 
   <div class="container" style="padding-left:500px;">
   
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Your Name" name="username" required>
+    <label for="uname"><b>Staffname</b></label>
+    <input type="text" placeholder="Enter Your Name" name="staffname" required>
 
 	<label for="mail"><b>Email</b></label>
     <input type="text" placeholder="Enter Your mailid" name="mail" required>

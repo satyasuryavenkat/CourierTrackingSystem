@@ -1,3 +1,4 @@
+package courier.tracking.system;
 import java.io.IOException;
 
 import javax.servlet.ServletException;
@@ -10,40 +11,40 @@ import javax.servlet.http.HttpServletResponse;
 
 
 
-@WebServlet("/register")
-public class UserServlet extends HttpServlet {
+@WebServlet("/addware")
+public class WarehouseServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
-    private UserDao userDao;
+    private WarehouseDao wareDao;
 
     public void init() {
-        userDao = new UserDao();
+        wareDao = new WarehouseDao();
     }
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
 
-        String username = request.getParameter("username");
-        String mailid = request.getParameter("mail");
+        String branchname = request.getParameter("branchname");
+       
         String mobile = request.getParameter("mobile");
         String address = request.getParameter("addr");
-        String password = request.getParameter("passwd");
+        
         
 
-        User user = new User();
-        user.setUsername(username);
-        user.setUsermail(mailid);
-        user.setUsermobile(mobile);
-        user.setUseraddr(address);
-        user.setUserpasswd(password);
+        Warehouse branch = new Warehouse();
+        branch.setBranchname(branchname);
+        
+        branch.setBranchmobile(mobile);
+        branch.setBranchaddr(address);
+        
         
 
         try {
-            userDao.registerUser(user);
+            wareDao.registerBranch(branch);
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
 
-        response.sendRedirect("index.html");
+        response.sendRedirect("./admin/viewware.jsp");
     }
 }

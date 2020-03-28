@@ -77,7 +77,7 @@ span.psw {
 <body>
 
 
-<form action="adminarea.jsp" method="post">
+<form action="<%= request.getContextPath() %>/adminlogin" method="post">
   <h1 align="center">Admin Login</h1>
 
   <div class="container" style="padding-left:500px;">
